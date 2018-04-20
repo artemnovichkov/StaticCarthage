@@ -10,7 +10,8 @@ public class MyClass {
         print("It works!")
     }
 
-    public static func image() -> UIImage {
-        return #imageLiteral(resourceName: "chevron")
+    public static func image() -> UIImage? {
+        let bundle = Bundle(for: MyClass.self)
+        return UIImage(named: "chevron", in: bundle, compatibleWith: nil)
     }
 }
