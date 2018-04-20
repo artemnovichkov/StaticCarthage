@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "06875EA820899F05005D674C"
-               BuildableName = "StaticCarthage.app"
-               BlueprintName = "StaticCarthage"
+               BlueprintIdentifier = "06875EE22089A05A005D674C"
+               BuildableName = "StaticCarthageFramework.framework"
+               BlueprintName = "StaticCarthageFramework"
                ReferencedContainer = "container:StaticCarthage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "06875EA820899F05005D674C"
-            BuildableName = "StaticCarthage.app"
-            BlueprintName = "StaticCarthage"
-            ReferencedContainer = "container:StaticCarthage.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "06875EA820899F05005D674C"
-            BuildableName = "StaticCarthage.app"
-            BlueprintName = "StaticCarthage"
+            BlueprintIdentifier = "06875EE22089A05A005D674C"
+            BuildableName = "StaticCarthageFramework.framework"
+            BlueprintName = "StaticCarthageFramework"
             ReferencedContainer = "container:StaticCarthage.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "06875EA820899F05005D674C"
-            BuildableName = "StaticCarthage.app"
-            BlueprintName = "StaticCarthage"
+            BlueprintIdentifier = "06875EE22089A05A005D674C"
+            BuildableName = "StaticCarthageFramework.framework"
+            BlueprintName = "StaticCarthageFramework"
             ReferencedContainer = "container:StaticCarthage.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

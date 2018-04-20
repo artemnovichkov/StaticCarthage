@@ -12,8 +12,35 @@
 		06875EB220899F05005D674C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06875EB020899F05005D674C /* Main.storyboard */; };
 		06875EB420899F0A005D674C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06875EB320899F0A005D674C /* Assets.xcassets */; };
 		06875EB720899F0A005D674C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06875EB520899F0A005D674C /* LaunchScreen.storyboard */; };
-		06875EBF20899F35005D674C /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06875EBE20899F35005D674C /* MyClass.swift */; };
+		06875EE72089A05A005D674C /* StaticCarthageFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 06875EE52089A05A005D674C /* StaticCarthageFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06875EEA2089A05A005D674C /* StaticCarthageFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06875EE32089A05A005D674C /* StaticCarthageFramework.framework */; };
+		06875EEB2089A05A005D674C /* StaticCarthageFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06875EE32089A05A005D674C /* StaticCarthageFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06875EF02089A061005D674C /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06875EBE20899F35005D674C /* MyClass.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06875EE82089A05A005D674C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06875EA120899F05005D674C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06875EE22089A05A005D674C;
+			remoteInfo = StaticCarthageFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06875EEF2089A05A005D674C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				06875EEB2089A05A005D674C /* StaticCarthageFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06875EA920899F05005D674C /* StaticCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +51,21 @@
 		06875EB620899F0A005D674C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06875EB820899F0A005D674C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06875EBE20899F35005D674C /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		06875EE32089A05A005D674C /* StaticCarthageFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticCarthageFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06875EE52089A05A005D674C /* StaticCarthageFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticCarthageFramework.h; sourceTree = "<group>"; };
+		06875EE62089A05A005D674C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		06875EA620899F05005D674C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06875EEA2089A05A005D674C /* StaticCarthageFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06875EDF2089A05A005D674C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				06875EAB20899F05005D674C /* StaticCarthage */,
+				06875EE42089A05A005D674C /* StaticCarthageFramework */,
 				06875EAA20899F05005D674C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				06875EA920899F05005D674C /* StaticCarthage.app */,
+				06875EE32089A05A005D674C /* StaticCarthageFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,12 +102,32 @@
 				06875EB320899F0A005D674C /* Assets.xcassets */,
 				06875EB520899F0A005D674C /* LaunchScreen.storyboard */,
 				06875EB820899F0A005D674C /* Info.plist */,
-				06875EBE20899F35005D674C /* MyClass.swift */,
 			);
 			path = StaticCarthage;
 			sourceTree = "<group>";
 		};
+		06875EE42089A05A005D674C /* StaticCarthageFramework */ = {
+			isa = PBXGroup;
+			children = (
+				06875EE52089A05A005D674C /* StaticCarthageFramework.h */,
+				06875EBE20899F35005D674C /* MyClass.swift */,
+				06875EE62089A05A005D674C /* Info.plist */,
+			);
+			path = StaticCarthageFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06875EE02089A05A005D674C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06875EE72089A05A005D674C /* StaticCarthageFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		06875EA820899F05005D674C /* StaticCarthage */ = {
@@ -77,15 +137,35 @@
 				06875EA520899F05005D674C /* Sources */,
 				06875EA620899F05005D674C /* Frameworks */,
 				06875EA720899F05005D674C /* Resources */,
+				06875EEF2089A05A005D674C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				06875EE92089A05A005D674C /* PBXTargetDependency */,
 			);
 			name = StaticCarthage;
 			productName = StaticCarthage;
 			productReference = 06875EA920899F05005D674C /* StaticCarthage.app */;
 			productType = "com.apple.product-type.application";
+		};
+		06875EE22089A05A005D674C /* StaticCarthageFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06875EEE2089A05A005D674C /* Build configuration list for PBXNativeTarget "StaticCarthageFramework" */;
+			buildPhases = (
+				06875EDE2089A05A005D674C /* Sources */,
+				06875EDF2089A05A005D674C /* Frameworks */,
+				06875EE02089A05A005D674C /* Headers */,
+				06875EE12089A05A005D674C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticCarthageFramework;
+			productName = StaticCarthageFramework;
+			productReference = 06875EE32089A05A005D674C /* StaticCarthageFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +178,9 @@
 				ORGANIZATIONNAME = "Artem Novichkov";
 				TargetAttributes = {
 					06875EA820899F05005D674C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					06875EE22089A05A005D674C = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -116,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				06875EA820899F05005D674C /* StaticCarthage */,
+				06875EE22089A05A005D674C /* StaticCarthageFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +215,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06875EE12089A05A005D674C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +231,26 @@
 			files = (
 				06875EAF20899F05005D674C /* ViewController.swift in Sources */,
 				06875EAD20899F05005D674C /* AppDelegate.swift in Sources */,
-				06875EBF20899F35005D674C /* MyClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06875EDE2089A05A005D674C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06875EF02089A061005D674C /* MyClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06875EE92089A05A005D674C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06875EE22089A05A005D674C /* StaticCarthageFramework */;
+			targetProxy = 06875EE82089A05A005D674C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		06875EB020899F05005D674C /* Main.storyboard */ = {
@@ -283,6 +389,7 @@
 		06875EBC20899F0A005D674C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StaticCarthage/Info.plist;
@@ -300,6 +407,7 @@
 		06875EBD20899F0A005D674C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StaticCarthage/Info.plist;
@@ -311,6 +419,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06875EEC2089A05A005D674C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticCarthageFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemnovichkov.StaticCarthageFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		06875EED2089A05A005D674C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = StaticCarthageFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemnovichkov.StaticCarthageFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -331,6 +493,15 @@
 			buildConfigurations = (
 				06875EBC20899F0A005D674C /* Debug */,
 				06875EBD20899F0A005D674C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06875EEE2089A05A005D674C /* Build configuration list for PBXNativeTarget "StaticCarthageFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06875EEC2089A05A005D674C /* Debug */,
+				06875EED2089A05A005D674C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
