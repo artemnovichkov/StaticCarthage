@@ -16,6 +16,7 @@
 		06875EEA2089A05A005D674C /* StaticCarthageFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06875EE32089A05A005D674C /* StaticCarthageFramework.framework */; };
 		06875EEB2089A05A005D674C /* StaticCarthageFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06875EE32089A05A005D674C /* StaticCarthageFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		06875EF02089A061005D674C /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06875EBE20899F35005D674C /* MyClass.swift */; };
+		06875EF52089CBAB005D674C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06875EF42089CBAB005D674C /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		06875EE32089A05A005D674C /* StaticCarthageFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticCarthageFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06875EE52089A05A005D674C /* StaticCarthageFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticCarthageFramework.h; sourceTree = "<group>"; };
 		06875EE62089A05A005D674C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06875EF42089CBAB005D674C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				06875EE52089A05A005D674C /* StaticCarthageFramework.h */,
 				06875EBE20899F35005D674C /* MyClass.swift */,
 				06875EE62089A05A005D674C /* Info.plist */,
+				06875EF42089CBAB005D674C /* Media.xcassets */,
 			);
 			path = StaticCarthageFramework;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06875EF52089CBAB005D674C /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
