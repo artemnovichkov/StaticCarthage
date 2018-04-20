@@ -4,9 +4,9 @@
 
 import Foundation
 
-class MyClass {
+public class MyClass {
 
-    static func log() {
+    public static func log() {
         print("It works!")
     }
 }
